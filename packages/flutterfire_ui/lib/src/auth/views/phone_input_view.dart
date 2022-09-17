@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/widgets.dart' hide Title;
 import 'package:flutterfire_ui/auth.dart';
 import 'package:flutterfire_ui/i10n.dart';
+import 'package:flutterfire_ui/src/auth/widgets/phone_input.dart';
 import '../widgets/internal/universal_button.dart';
 
 import '../widgets/internal/title.dart';
@@ -92,7 +93,7 @@ class _PhoneInputViewState extends State<PhoneInputView> {
               widget.subtitleBuilder!(context),
             if (state is AwaitingPhoneNumber || state is SMSCodeRequested) ...[
               PhoneInput(
-                initialCountryCode: countryCode!,
+                initialCountryCode: countryCode ?? countries.first.countryCode,
                 onSubmit: onSubmit(ctrl),
                 key: phoneInputKey,
               ),
