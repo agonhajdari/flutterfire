@@ -100,6 +100,7 @@ final countries = [
   {'name': 'Jordan', 'phoneCode': '962', 'countryCode': 'JO'},
   {'name': 'Kazakhstan', 'phoneCode': '7', 'countryCode': 'KZ'},
   {'name': 'Kenya', 'phoneCode': '254', 'countryCode': 'KE'},
+  {'name': 'Kosovo', 'phoneCode': '383', 'countryCode': 'XK'},
   {'name': 'Kuwait', 'phoneCode': '965', 'countryCode': 'KW'},
   {'name': 'Kyrgyzstan', 'phoneCode': '996', 'countryCode': 'KG'},
   {'name': 'Laos', 'phoneCode': '856', 'countryCode': 'LA'},
